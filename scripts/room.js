@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 class Room {
   constructor() {
     this.gabX = cellGab * fieldWidth;
@@ -18,7 +19,7 @@ class Room {
     this.playerSteps = 65;
     this.items = ['red', 'blue', 'violet', 'green'];
     this.bombs = 0;
-    this.minGroop = 5;
+    this.minGroop = 15;
     this.mixing = 4;
     this.stopGame = '';
     this.compliteCase = {
@@ -60,7 +61,7 @@ class Room {
       if (this.alert) {
         ctx.font = 'bold 18px sans-serif';
         ctx.fillStyle = 'yellow';
-        ctx.fillText(`minimum to crash : ${this.minGroop}`, this.x + 275 + (i * 70), this.y + 230);
+        ctx.fillText(`minimum to crash : ${this.minGroop}`, this.x + 275 + (i * 70), this.y + 280);
       } else {
         ctx.fillText(`minimum to crash : ${this.minGroop}`, this.x + 375 + (i * 70), this.y - 22);
       }
