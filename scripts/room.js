@@ -19,7 +19,7 @@ class Room {
     this.playerSteps = 65;
     this.items = ['red', 'blue', 'violet', 'green'];
     this.bombs = 0;
-    this.minGroop = 15;
+    this.minGroop = 5;
     this.mixing = 4;
     this.stopGame = '';
     this.compliteCase = {
